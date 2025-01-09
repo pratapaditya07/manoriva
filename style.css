@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Fleur+De+Leah&family=Hurricane&family=Imperial+Script&family=Italianno&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    height: 3.5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 30px 0 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+#nav_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav_left img{
+    height: 30px;
+    width: 30px;
+}
+
+#nav_left p{
+    font-size: 30px;
+    font-family: 'Fleur De Leah', cursive;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}       
+
+#nav_mid ul{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+#nav_mid ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "boska", cursive;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#nav_right i{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#content{
+    height: 180vh;
+    width: 100%;
+    padding-top: 7vh;
+}
+
+#heading{
+    height: 35vh;
+    width: 100%;
+}
+
+#heading h1{
+    line-height: 0.9;
+}
+
+#heading #cursive{
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Fleur De Leah', cursive;
+    font-weight: 500;
+}
+
+#heading #bold{
+    text-align: center;
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: 'gambarino', cursive;
+    font-weight: 500;
+}
+
+#mainimagepart{
+    height: 140vh;
+    width: 100%;
+    display: flex;
+/*     background-color: rosybrown; */
+}
+
+#necklace{
+    height: 13vw;
+    width: 18vw;
+    position: absolute;
+    top: 50vw;
+    left: 2vw;
+    border-radius: 50px;
+}
+
+#mainimage{
+    height: 130vh;
+    margin-left: 23vw;
+    border-radius: 70px;
+}
+
+#earrings{
+    height: 15vw;
+    width: 14vw;
+    position: absolute;
+    right: 5vw;
+    top: 100%;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
