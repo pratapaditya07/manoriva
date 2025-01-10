@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #page1{
-    height: 100vh;
+    height: 185vh;
     width: 100%;
 }
 
@@ -29,8 +33,9 @@ nav{
 }
 
 #nav_left img{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
 
 #nav_left p{
@@ -63,6 +68,62 @@ nav{
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
+
+#fixedpart{
+    height: 5vw;
+    width: 100%;
+/*     background-color: aquamarine;
+ */    display: flex;
+    align-items: center;
+    padding: 0vw 1vw;
+    top: 89vh;
+    position: fixed;
+    z-index: 2;
+}
+
+#fixedpart_left{
+    height: 100%;
+    width: 94%;
+    display: flex;
+    align-items: center;
+}
+
+#fixedpart_left img{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+}
+
+#fixedpart_left h2{
+    font-family: 'Fleur De Leah', cursive;
+    margin: -5px 10px;
+    font-weight: 600;
+}
+
+#fixedpart_left h6{
+    font-family: 'satoshi', cursive;
+    margin: 0 10px;
+    font-weight: 600;
+    line-height: 0.9;
+}
+#fixedpart_right h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #content{
     height: 180vh;
@@ -105,27 +166,86 @@ nav{
     height: 13vw;
     width: 18vw;
     position: absolute;
-    top: 50vw;
-    left: 2vw;
-    border-radius: 50px;
+    top: 51vw;
+    left: 4vw;
+    border-radius: 20px;
+    animation-name: ltrr;
+    animation-timeline: view();
+    animation-range: entry 0%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@keyframes ltrr{
+    from{
+        transform: translateX(-500%);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
 #mainimage{
     height: 130vh;
     margin-left: 23vw;
     border-radius: 70px;
+    z-index: -1;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 #earrings{
-    height: 15vw;
-    width: 14vw;
+    height: 29vw;
+    width: 16vw;
     position: absolute;
-    right: 5vw;
+    right: 4vw;
     top: 100%;
-    border-radius: 50px;
+/*     background-color: aqua;
+ */    border-radius: 20px;
+    animation-name: rtll;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+
+@keyframes rtll{
+    from{
+        transform: translateX(50vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+#earrings img{
+    height: 21vw;
+    width: 16vw;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#earrings h2{
+    font-family: "fleur de leah", cursive;
+    margin: 0.5vw 0vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#earrings h5{
+    font-family: "satoshi", cursive;
+    margin: 0.5vw 0vw;
+    font-weight: 500;
 }
 
 
+
+
+
+
+
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+}
 
 
 

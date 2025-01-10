@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://api.fontshare.com/v2/css?f[]=gambarino@400&f[]=rosaline@400&f[]=outfit@1&f[]=melodrama@1&f[]=aktura@400&f[]=clash-display@1&f[]=panchang@1&f[]=stardom@400&f[]=bebas-neue@400&f[]=general-sans@1&f[]=chillax@1&f[]=boska@1&f[]=telma@1&f[]=tanker@400&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="/media/logo.jpg">
+    <title>Manoriva</title>
 </head>
 <body>
     <div id="main">
@@ -31,7 +33,22 @@
                     <i class="ri-luggage-cart-line"></i>
                 </div>
             </nav>
-
+            <div id="fixedpart">
+                <div id="fixedpart_left">    
+                    <img src="/media/fixedimage.jpg" alt="image">
+                    <div>
+                        <h2>Iconic Collection</h2>
+                        <h6>Lorem ipsum dolor sit <br> amet consectetur adipisicing elit.</h6>
+                    </div>
+                </div>
+                <div id="fixedpart_right">
+                    <h2>
+                        <i class="ri-facebook-circle-line"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-line"></i>
+                    </h2>
+                </div>
+            </div>
             <div id="content">
                 <div id="heading">
                     <h1 id="cursive">Dive Into</h1>
@@ -39,16 +56,24 @@
                 </div>
                 <div id="mainimagepart">
                     <img id="mainimage" src="/media/main_image.jpg" alt="mainimage">
-                    <img id="earrings" src="/media/earrings.jpg" alt="earring image">
+                    <div id="earrings">
+                        <img src="/media/earrings.jpg" alt="earring image">
+                        <h2>Diamond Stud Earring</h2>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quibusdam dicta doloremque.</h5>
+                        <h2><i class="ri-arrow-right-circle-line"></i></h2>
+                    </div>
                     <img id="necklace" src="/media/necklace.jpg" alt="nacklace image">
                 </div>
             </div>
+        </div>
+        <div id="page2">
+
         </div>
     </div>
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
