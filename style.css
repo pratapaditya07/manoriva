@@ -60,11 +60,32 @@ nav{
     color: rgb(0, 0, 0);
     margin: 0 10px;
     cursor: pointer;
+    position: relative;
+}
+
+
+#nav_mid ul li::after{
+    content: '';
+    height: 2px;
+    width: 0vw;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0vw;
+    left: 0%;
+    transform: scale(0);
+
+}
+
+#nav_mid ul li:hover::after{
+    width: 100%;
+    background-color: #000;
+    transform: scale(1);
+    transition: all ease 0.3s;
 }
 
 #nav_right i{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
