@@ -9,7 +9,7 @@ gsap.to("#mainimage",{
     }
 })
 
-gsap.from("#ll",{
+/* gsap.from("#ll",{
     scale:0,
     scrollTrigger:{
         trigger: "#ll",
@@ -29,7 +29,7 @@ gsap.from("#l",{
         end:"top 60%",
         scrub: 1
     }
-})
+}) */
 
 gsap.from("#m",{
     scale:0,
@@ -42,7 +42,7 @@ gsap.from("#m",{
     }
 })
 
-gsap.from("#r",{
+/* gsap.from("#r",{
     scale:0,
     scrollTrigger:{
         trigger: "#r",
@@ -62,4 +62,4 @@ gsap.from("#rr",{
         end:"top 60%",
         scrub: 1
     }
-})
+}) */
