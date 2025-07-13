@@ -8,6 +8,7 @@
 
 body{
     overflow-x: hidden;
+    background-color: white;
 }
 
 #page1{
@@ -78,7 +79,7 @@ nav{
 
 #nav_mid ul li:hover::after{
     width: 100%;
-    background-color: #000;
+    background-color: #020402;
     transform: scale(1);
     transition: all ease 0.3s;
 }
@@ -86,7 +87,7 @@ nav{
 #nav_right i{
     font-size: 18px;
     font-weight: 400;
-    color: rgb(0, 0, 0);
+    color: #020402;
     cursor: pointer;
 }
 
@@ -296,7 +297,7 @@ nav{
 #pg2heading button{
     font-size: 1.2vw;
     background-color: #646949;
-    color: aliceblue;
+    color: #ECEDE2;
     font-family: "gambarino", cursive;
     margin-bottom: 0.5vw;
     font-weight: 600;
@@ -374,18 +375,139 @@ nav{
 #rr:hover , #ll:hover{
     height: 70vh;
     width: 18%;
+    cursor: pointer;
 }
 
 #r:hover , #l:hover {
     height: 40vh;
     width: 18%;
+    cursor: pointer;
 }
 
+#m:hover{
+    cursor: pointer;
+}
 
 #page3{
     height: 100vh;
     width: 100%;
     line-height: 0.9;
+    background-image: url(media/haldi.jpg);
+    background-position: top;
+    background-size: cover;
+
+}
+
+#pg3heading{
+    height: 30vh;
+    width: 100%;
+    padding-top: 8vh;
+    line-height: 0.9;
     display: block;
     text-align: center;
+}   
+#pg3cursive{
+    font-size: 80px;
+    font-family: 'Fleur De Leah', cursive;/* ---------------- */
+    font-weight: 500;
+}
+
+#pg3bold{
+    font-size: 110px;
+    text-transform: uppercase;
+    font-family: 'gambarino', cursive;
+    font-weight: 500;
+}
+
+#ring_ceremony{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#ring_ceremony_images{
+    height: 40vh;
+    width: 30vw;
+    background-color: #646949;
+    position: absolute;
+    top: 30%;
+    left : 5%;
+}
+
+#ring_ceremony_images video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+
+#ring_ceremony img{
+    height: 90%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+#haldi_ceremony{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#haldi_ceremony_images{
+    height: 40vh;
+    width: 30vw;
+    background-color: #646949;
+    position: absolute;
+    top: 30%;
+    right : 5%;
+}
+
+#haldi_ceremony img{
+    height: 90%;
+    border-radius: 20px;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+}
+
+#haldi_ceremony_images video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+
+#wedding_ceremony{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#wedding_ceremony_images{
+    height: 40vh;
+    width: 30vw;
+    background-color: #646949;
+    position: absolute;
+    top: 30%;
+    left : 5%;
+}
+
+#wedding_ceremony img{
+    height: 90%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+#wedding_ceremony_images video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    
 }
