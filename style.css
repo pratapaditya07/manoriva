@@ -24,7 +24,7 @@ nav{
     align-items: center;
     padding: 0 30px 0 20px;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
 }
 
 #nav_left{
@@ -308,7 +308,7 @@ nav{
 }
 
 #pg2images{
-    height: 70vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -324,6 +324,34 @@ nav{
     background-size: cover;
     background-position: left;
     border-radius: 20px;
+    z-index: 1;
+}
+
+.imagesss::before{
+    content: 'Explore';
+    font-size: 1.2vw;
+    font-family: 'gambarino', cursive;
+    height: 6vh;
+    width: 60%;
+    background-color: #646949;
+    color: #DADED8;
+    font-weight: 500;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0vw;
+    left: 20%;
+    margin-top: 0vh;
+    border-radius: 20px;
+    opacity: 0;
+
+}
+
+.imagesss:hover::before{
+    opacity: 1;
+    margin-top: -6vh;
+    transition: all ease 700ms;
 }
 
 #l{
@@ -337,6 +365,8 @@ nav{
     transform: translateY(-10vh);
     transition: all ease 0.5s;
 }
+
+
 
 #m{
     height: 52vh;
@@ -369,7 +399,7 @@ nav{
     background-image: url(/media/rings.webp);
     background-size: cover;
     background-position: bottom;
-    border-radius: 20px;
+    border-radius: 20px;    
 }
 
 #rr:hover , #ll:hover{
@@ -388,11 +418,56 @@ nav{
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------- */
+
 #page3{
     height: 100vh;
     width: 100%;
     line-height: 0.9;
     background: radial-gradient(circle at 50% 50%, #646949 ,rgba(255, 255, 255) 50%);
+    background: linear-gradient(0deg, #646949, rgba(255, 255, 255) 50%);
 }
 
 #pg3heading{
@@ -409,7 +484,6 @@ nav{
     font-size: 80px;
     font-family: 'Fleur De Leah', cursive;/* ---------------- */
     font-weight: 500;
-
 }
 
 #pg3bold{
@@ -433,15 +507,100 @@ nav{
     height: 100vh;
     width: 32%;
     border-radius: 20px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     margin-top: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    object-fit: cover;
 }
+
+#ring_ceremony_up, #haldi_ceremony_up, #wedding_ceremony_up{
+    height: 50vh;
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 20px;
+}
+
+#ring_ceremony_down, #haldi_ceremony_down, #wedding_ceremony_down{
+    height: 50vh;
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 20px;
+}
+
+#ring_ceremony video, #haldi_ceremony video, #wedding_ceremony video{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
 
 #ring_ceremony img, #haldi_ceremony img, #wedding_ceremony img{
     height: 100%;
     width: 100%;
     border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -452,7 +611,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #536949;
 }
 
 footer{
@@ -468,27 +627,35 @@ footer{
     display: flex;
     justify-content: space-between;
     overflow-y: hidden;
+    gap: 40vw;
+    overflow: hidden ;
+
 }
 
 footer img{
-    height: 110%;
-    width: 30%;
+    height: 120%;
+    width: 50%;
     object-fit: contain;
     mix-blend-mode: darken ;
     opacity: 0.8;
+    margin-left: -7vw;
+    margin-top: 7vw;
+    
 }
 
 footer h1{
-    font-size: 20vw;
+    font-size: 25vw;
     font-family: "fleur de leah", cursive;
     font-weight: 400;
     position: absolute;
     top: 0%;
-    margin-top: -4vh;
+    margin-top: 0vh;
     text-align: center; 
     width: 100%;
     color: #020402;
     z-index: 11;
+    color: #daded8;
+    line-height: 0.7;
 }
 
 #screen{
@@ -497,7 +664,47 @@ footer h1{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #6469498d;
+    background-color: #0f390fbb;
     z-index: 10;
 }
 
+#footer_wp{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    font-size: 1.2vw;
+    font-family: "gambarino", cursive;
+    font-weight: 400;
+    color: #daded8;
+    line-height: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#footer_wp details{
+    position: relative;
+
+}
+
+#footer_wp details summary{
+    cursor: pointer;
+    list-style: none;
+}
+
+#footer_wp details ul{
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    width: max-content;
+    background-color: crimson;
+}
+
+#footer_wp details ul li{
+    padding: 1vw;
+    cursor: pointer;
+}
