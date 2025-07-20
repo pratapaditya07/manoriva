@@ -294,17 +294,22 @@ nav{
     line-height: 1;
 }
 
-#pg2heading button{
-    font-size: 1.2vw;
+#explore_btn{
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    width: 30px;
+    height: 30px;
     background-color: #646949;
-    color: #ECEDE2;
-    font-family: "gambarino", cursive;
-    margin-bottom: 0.5vw;
-    font-weight: 600;
-    padding: 0.5vw 1vw;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.8;
+    transform:  translateX(0)
+                translateY(0)
+                scale(0);
+                
+    transition: trasnform 1500ms;
+    z-index: 111111;
+    pointer-events: none;
 }
 
 #pg2images{

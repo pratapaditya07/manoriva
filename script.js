@@ -1,3 +1,28 @@
+let body = document.querySelector("body");
+let mouse = document.getElementById("explore_btn");
+
+body.addEventListener("mousemove", (e) => {
+    let scale = 1;
+    if(e.target.classList.contains("imagesss")){
+        scale = 2;
+    }
+        mouse.style.transform = `
+            translateX(${e.clientX}px)
+            translateY(${e.clientY}px)
+            scale(${scale})
+        `
+    })
+
+body.addEventListener("mouseout", (e) => {
+    mouse.style.transform = `
+        translateX(${e.clientX}px)
+        translateY(${e.clientY}px)
+        scale(0)
+    `;
+})
+
+
+
 gsap.to("#mainimage",{
     scale:1.2,
     scrollTrigger:{
