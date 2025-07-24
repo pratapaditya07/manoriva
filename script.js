@@ -25,24 +25,71 @@ body.addEventListener("mouseout", (e) => {
 // Dummy product data with IDs for detail page
 const products = {
     earrings: [
-        { name: "Gold Hoop", img: "media/ear_rings.jpg", id: "gold-hoop" },
-        { name: "Stud Earrings", img: "media/fixedimage.jpg", id: "stud-earrings" },
-        { name: "Stud Earrings", img: "media/hand.webp", id: "stud-earrings" },
-        { name: "Stud Earrings", img: "images/earring2.jpg", id: "stud-earrings" },
-        { name: "Stud Earrings", img: "images/earring2.jpg", id: "stud-earrings" },
-        { name: "Stud Earrings", img: "images/earring2.jpg", id: "stud-earrings" },
-        { name: "Stud Earrings", img: "images/earring2.jpg", id: "stud-earrings" },
-        { name: "Stud Earrings", img: "images/earring2.jpg", id: "stud-earrings" },
-        { name: "Stud Earrings", img: "images/earring2.jpg", id: "stud-earrings" },
-        { name: "Stud Earrings", img: "images/earring2.jpg", id: "stud-earrings" }
+        { name: "Gold Hoop", img: "media/earrings/earring1.jpg", id: "gold-hoop" },
+        { name: "Stud Earrings", img: "media/earrings/earring2.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/earrings/earring3.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/earrings/earring4.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/earrings/earring5.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/earrings/earring6.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/earrings/earring7.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/earrings/earring8.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/earrings/earring9.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/earrings/earring10.jpg", id: "stud-earrings" }
+    ],
+
+    handhelds: [
+        { name: "Gold Hoop", img: "media/handhelds/handbag1.jpg", id: "gold-hoop" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag2.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag3.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag4.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag5.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag6.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag7.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag8.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag9.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/handhelds/handbag10.jpg", id: "stud-earrings" }
     ],
     necklaces: [
-        { name: "Pearl Necklace", img: "images/necklace1.jpg", id: "pearl-necklace" },
-        { name: "Choker Set", img: "images/necklace2.jpg", id: "choker-set" }
+        { name: "Pearl Necklace", img: "media/necklaces/necklace1.jpg", id: "pearl-necklace" },
+        { name: "Choker Set", img: "media/necklaces/necklace2.jpg", id: "choker-set" },
+        { name: "Pearl Necklace", img: "media/necklaces/necklace3.jpg", id: "pearl-necklace" },
+        { name: "Choker Set", img: "media/necklaces/necklace4.jpg", id: "choker-set" },
+        { name: "Pearl Necklace", img: "media/necklaces/necklace5.jpg", id: "pearl-necklace" },
+        { name: "Choker Set", img: "media/necklaces/necklace6.jpg", id: "choker-set" },
+        { name: "Pearl Necklace", img: "media/necklaces/necklace7.jpg", id: "pearl-necklace" },
+        { name: "Choker Set", img: "media/necklaces/necklace8.jpg", id: "choker-set" },
+        { name: "Pearl Necklace", img: "media/necklaces/necklace9.jpg", id: "pearl-necklace" },
+        { name: "Choker Set", img: "media/necklaces/necklace10.jpg", id: "choker-set" },
+
+        
+        
     ],
+
+    bangles: [
+        { name: "Stud Earrings", img: "media/bangles/bangle1.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle2.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle3.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle4.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle5.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle6.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle7.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle8.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle9.jpg", id: "stud-earrings" },
+        { name: "Stud Earrings", img: "media/bangles/bangle10.jpg", id: "stud-earrings" },
+    ],
+
+
     rings: [
-        { name: "Diamond Ring", img: "images/ring1.jpg", id: "diamond-ring" },
-        { name: "Ruby Ring", img: "images/ring2.jpg", id: "ruby-ring" }
+        { name: "Diamond Ring", img: "media/rings/ring1.jpg", id: "diamond-ring" },
+        { name: "Ruby Ring", img: "media/rings/ring2.jpg", id: "ruby-ring" },
+        { name: "Diamond Ring", img: "media/rings/ring3.jpg", id: "diamond-ring" },
+        { name: "Ruby Ring", img: "media/rings/ring4.jpg", id: "ruby-ring" },
+        { name: "Diamond Ring", img: "media/rings/ring5.jpg", id: "diamond-ring" },
+        { name: "Ruby Ring", img: "media/rings/ring6.jpg", id: "ruby-ring" },
+        { name: "Diamond Ring", img: "media/rings/ring7.jpg", id: "diamond-ring" },
+        { name: "Ruby Ring", img: "media/rings/ring8.jpg", id: "ruby-ring" },
+        { name: "Diamond Ring", img: "media/rings/ring9.jpg", id: "diamond-ring" },
+        { name: "Ruby Ring", img: "media/rings/ring10.jpg", id: "ruby-ring" },
     ]
 };
 
